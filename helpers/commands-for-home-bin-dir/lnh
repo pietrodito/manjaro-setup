@@ -1,0 +1,2 @@
+unlink ~/0_Quick-Link 2> /dev/null
+ln -sf `pwd` ~/0_Quick-Link
