@@ -1,5 +1,4 @@
 source ./installers/source-to-set-repo-dir-var.sh
-source ./helpers/aur-package-installer
 
 sudo pacman --sync --refresh --sysupgrade --noconfirm --needed base-devel
 
