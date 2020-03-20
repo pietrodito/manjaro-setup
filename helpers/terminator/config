@@ -4,6 +4,7 @@
   handle_size = 20
   inactive_color_offset = 1.0
   suppress_multiple_term_dialog = True
+  window_state = maximise
 [keybindings]
   broadcast_group = None
   close_term = None
@@ -72,7 +73,6 @@
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
-    visible_bell = False
   [[New Profile]]
     background_darkness = 0.4
     background_type = transparent
@@ -83,4 +83,3 @@
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
-    visible_bell = False
