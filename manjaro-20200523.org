@@ -1,0 +1,22 @@
+* Setup to build AUR package
+** Needed packages
+#+begin_src bash
+sudo pacman -S --needed git
+
+# already set on manjaro
+sudo pacman -S --needed base-devel 
+#+end_src
+
+** Enable parallel compiling
+Inside `/etc/makepkg.conf`:
+
+#+begin_src
+# already set on manjaro
+MAKEFLAGS="-j$(($(nproc)+1))"
+#+begin_end
+
+* Install Firefox
+
+#+begin_src bash
+sudo pacman -S --needed firefox
+#+end_src

@@ -5,3 +5,5 @@ cd ~/Comp/AUR/peco
 makepkg --syncdeps --install --rmdeps --clean --noconfirm --needed
 
 sudo pacman --sync --refresh --sysupgrade --noconfirm --needed fasd
+
+#TODO add eval "$(fasd --init auto)" inside zsh
