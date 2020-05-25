@@ -1,11 +1,12 @@
 source ./installers/source-to-set-repo-dir-var.sh
 ./installers/aur-tools-setup.sh
-./installers/smart-caps-lock-installer.sh
+./installers/kbd-setup-installer.sh
 ./installers/top-setup.sh
 ./installers/git-setup.sh
 ./installers/vim-setup.sh
 ./installers/command-line-tools.sh
 ./installers/terminator-install.sh
+./installers/tmux-setup.sh
 ./installers/oh-my-zsh.sh
 ./installers/copy-zsh-files-to-custom-dir.sh
 ./installers/home-bin-commands.sh

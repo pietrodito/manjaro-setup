@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+ULYS_kbd=$HOME/bin/kbd-is-intl
+
+if [[ -a $ULYS_kbd ]]; then
+    rm $ULYS_kbd
+    setxkbmap -layout us
+else
+    touch $ULYS_kbd
+    setxkbmap -layout us -variant intl
+fi
+

@@ -1,6 +1,8 @@
 #!/bin/bash
 
 do-the-trick () {
+    setxkbmap -layout "us,us" -variant "basic,intl"
+    setxkbmap -option grp:shifts_toggle
     setxkbmap -option ctrl:nocaps
     xcape -e 'Control_L=Escape'
 }
