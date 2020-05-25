@@ -15,3 +15,5 @@ source ./installers/source-to-set-repo-dir-var.sh
 ./installers/zotero-setup.sh
 ./installers/nextcloud-setup.sh
 ./installers/R-setup.sh
+./installers/i3-config-file.sh
+./installers/firefox-setup.sh
