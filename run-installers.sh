@@ -1,22 +1,29 @@
-source ./installers/source-to-set-repo-dir-var.sh
+sudo pacman --sync --refresh --sysupgrade --noconfirm
+sudo pacman --sync --noconfirm --needed base-devel
 
-./installers/aur-tools-setup.sh
-./installers/kbd-setup-installer.sh
-./installers/top-setup.sh
-./installers/git-setup.sh
+## ----- yay seutp
+git clone https://aur.archlinux.org/yay.git $HOME/Yay
+cd $HOME/Yay
+makepkg -si --noconfirm
+
+sudo pacman --sync --noconfirm --needed xcape
+sudo pacman --sync --noconfirm --needed git
+
 ./installers/vim-setup.sh
-./installers/command-line-tools.sh
-./installers/terminator-install.sh
-./installers/tmux-setup.sh
+
+sudo pacman --sync --noconfirm --needed fasd
+
+yay -S --noconfirm peco-bin
+
+sudo pacman --sync --noconfirm --needed terminator
+sudo pacman --sync --noconfirm --needed tmux
 ./installers/oh-my-zsh.sh
-./installers/copy-zsh-files-to-custom-dir.sh
-./installers/home-bin-commands.sh
-./installers/redshift-setup.sh
-./installers/autokey-setup.sh
-./installers/zotero-setup.sh
-./installers/nextcloud-setup.sh
-./installers/libreoffice-setup.sh
-./installers/R-setup.sh
-./installers/i3-config-file.sh
-./installers/firefox-setup.sh
-./installers/inkscape-setup.sh
+
+sudo pacman --sync --noconfirm --needed redshift
+yay -S --noconfirm autokey
+yay -S --noconfirm zotero
+sudo pacman --sync --noconfirm --needed nextcloud-client
+sudo pacman --sync --noconfirm --needed libreoffice-fresh
+sudo pacman --sync --noconfirm --needed r gcc-fortran tk
+
+sudo pacman --sync --noconfirm --needed inkscape

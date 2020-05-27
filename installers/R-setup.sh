@@ -1,4 +1,3 @@
-sudo pacman --sync --refresh --sysupgrade --noconfirm --needed r gcc-fortran tk
 
 # RSTUDIO:
 # AUR_DIR="$HOME/Comp/AUR/rstudio-desktop"
@@ -14,4 +13,3 @@ sudo pacman --sync --refresh --sysupgrade --noconfirm --needed r gcc-fortran tk
 # ln -s /usr/share/qt/resources ~/.QtWebEngineProcess
 
 # PANDOC:
-sudo pacman --sync --refresh --sysupgrade --noconfirm --needed pandoc

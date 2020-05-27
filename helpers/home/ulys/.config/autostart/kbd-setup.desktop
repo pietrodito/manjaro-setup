@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/home/ulys/bin/smart-caps-lock.sh
+Exec=/home/ulys/bin/kbd-setup
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
