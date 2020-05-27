@@ -6,6 +6,8 @@ git clone https://aur.archlinux.org/yay.git $HOME/Yay
 cd $HOME/Yay
 makepkg -si --noconfirm
 
+sudo pacman --sync --noconfirm --needed tree
+
 sudo pacman --sync --noconfirm --needed xcape
 sudo pacman --sync --noconfirm --needed git
 
