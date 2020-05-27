@@ -1,5 +1,0 @@
-source ./installers/source-to-set-repo-dir-var.sh
-
-sudo pacman --sync --refresh --sysupgrade --noconfirm --needed xcape
-
-
