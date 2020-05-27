@@ -1,4 +1,4 @@
-rm --recursive --force ~/Comp/AUR/peco
+sudo rm --recursive --force ~/Comp/AUR/peco
 git clone https://aur.archlinux.org/peco.git ~/Comp/AUR/peco
 
 cd ~/Comp/AUR/peco

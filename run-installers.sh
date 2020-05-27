@@ -1,4 +1,5 @@
 source ./installers/source-to-set-repo-dir-var.sh
+
 ./installers/aur-tools-setup.sh
 ./installers/kbd-setup-installer.sh
 ./installers/top-setup.sh
@@ -14,6 +15,8 @@ source ./installers/source-to-set-repo-dir-var.sh
 ./installers/autokey-setup.sh
 ./installers/zotero-setup.sh
 ./installers/nextcloud-setup.sh
+./installers/libreoffice-setup.sh
 ./installers/R-setup.sh
 ./installers/i3-config-file.sh
 ./installers/firefox-setup.sh
+./installers/inkscape-setup.sh
