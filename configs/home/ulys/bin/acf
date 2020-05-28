@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ ! -L "$1" ]; then
+CONFIGS_DIR="$HOME/Comp/manjaro-setup/configs"
+ArgPath=`realpath "$1"`
+ArgDir="$( cd "$( dirname "$1" )" && pwd )"
+
+
+mkdir -p "${CONFIGS_DIR}$ArgDir"
+sudo cp -frpT "$ArgPath" "${CONFIGS_DIR}${ArgPath}"
+sudo ln -sf "${CONFIGS_DIR}${ArgPath}" "$ArgPath"
+else
+    echo "Already symbolic link: $1"
+fi
