@@ -1,5 +1,3 @@
-## TODO clone repo from
-
 COMP_DIR=$HOME/Comp/
 DOT_CONFIG_DIR=$COMP_DIR/dotconfig/
 
