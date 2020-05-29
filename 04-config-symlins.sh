@@ -1,4 +1,1 @@
-CONFIGS_DIR=`pwd`/configs
-
-sudo cp -asfrp $CONFIGS_DIR/. /
-
+## TODO clone repo from
