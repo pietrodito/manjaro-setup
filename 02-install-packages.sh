@@ -1,21 +1,33 @@
-sudo pacman --sync --refresh --sysupgrade --noconfirm
+sudo pacman --sync --refresh --sysupgrade --noconfirm base-devel yay
 
-sudo pacman --sync --noconfirm --needed tree
-sudo pacman --sync --noconfirm --needed xcape
-sudo pacman --sync --noconfirm --needed fasd
-sudo pacman --sync --noconfirm --needed terminator
-sudo pacman --sync --noconfirm --needed tmux
 
-sudo pacman --sync --noconfirm --needed emacs
+Packages=(
+    ## Core
+    terminator
+    emacs
+    tmux
 
-sudo pacman --sync --noconfirm --needed nextcloud-client
-sudo pacman --sync --noconfirm --needed libreoffice-fresh
-sudo pacman --sync --noconfirm --needed r gcc-fortran tk
-sudo pacman --sync --noconfirm --needed inkscape
+    ## KBD
+    xcape
+    autokey
 
-sudo pacman --sync --noconfirm --needed base-devel
-sudo pacman --sync --noconfirm --needed yay
-yay         --sync --noconfirm --needed peco-bin
-yay         --sync --noconfirm --needed autokey
-yay         --sync --noconfirm --needed zotero
+    ## CLI
+    peco-bin
+    tree
+    fasd
 
+    ## R
+    r
+    gcc-fortran
+    tk
+
+    ## Documents
+    nextcloud-client
+    libreoffice-fresh
+    inkscape
+    zotero
+)
+
+for pkg in "${Packages[@]}"; do
+yay         --sync --noconfirm --needed $pkg
+done
