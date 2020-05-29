@@ -22,6 +22,8 @@ Packages=(
     tk
 
     ## Documents
+    pandoc
+    texlive-most
     nextcloud-client
     libreoffice-fresh
     inkscape
