@@ -19,10 +19,9 @@ Packages=(
     tree
     fasd
 
-    ## R
-    r
-    gcc-fortran
-    tk
+    ## Programming
+    r gcc-fortran tk
+    julia-bin
 
     ## Documents
     pandoc
