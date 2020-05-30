@@ -1,7 +1,10 @@
-sudo pacman --sync --refresh --sysupgrade --noconfirm base-devel yay
-
-
 Packages=(
+    ##
+    ## yay setup -- keep those package first
+    ##
+    base-devel
+    yay
+
     ## Core
     terminator
     emacs
@@ -28,8 +31,13 @@ Packages=(
     libreoffice-fresh
     inkscape
     zotero
+
+    ## Music
+    spotify
 )
 
+## Helper to install the packages listed above
+sudo pacman --sync --refresh --sysupgrade
 for pkg in "${Packages[@]}"; do
-yay         --sync --noconfirm --needed $pkg
+    yay --sync --noconfirm --needed $pkg
 done
