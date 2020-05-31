@@ -6,7 +6,7 @@ Packages=(
     yay
 
     ## Core
-    terminator
+    alacritty # terminator
     emacs
     tmux
 
