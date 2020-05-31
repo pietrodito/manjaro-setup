@@ -22,6 +22,7 @@ Packages=(
     ## Programming
     r gcc-fortran tk
     julia-bin
+    npm
 
     ## Documents
     pandoc
