@@ -37,7 +37,7 @@ Packages=(
 )
 
 ## Helper to install the packages listed above
-sudo pacman --sync --refresh --sysupgrade
+sudo pacman --sync --refresh --sysupgrade --noconfirm
 for pkg in "${Packages[@]}"; do
     yay --sync --noconfirm --needed $pkg
 done
