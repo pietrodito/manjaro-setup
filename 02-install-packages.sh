@@ -6,9 +6,10 @@ Packages=(
     yay
 
     ## Core
-    alacritty # terminator
+    terminator
     emacs
     tmux
+    nerd-fonts-iosevka
 
     ## KBD
     xcape
