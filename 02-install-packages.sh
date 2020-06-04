@@ -24,6 +24,7 @@ Packages=(
     r gcc-fortran tk
     julia-bin
     npm
+    jre-openjkd # needed by libreoffice...
 
     ## Documents
     pandoc
