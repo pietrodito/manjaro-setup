@@ -8,7 +8,7 @@ Packages=(
 
     ## KBD
     xcape
-    autokey
+    autokey-patched
 
     ## CLI
     peco-bin
