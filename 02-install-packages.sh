@@ -1,9 +1,4 @@
 Packages=(
-    ##
-    ## yay setup -- keep those package first
-    ##
-    base-devel
-    yay
 
     ## Core
     terminator
@@ -39,7 +34,7 @@ Packages=(
 )
 
 ## Helper to install the packages listed above
-sudo pacman --sync --refresh --sysupgrade --noconfirm
+sudo pacman --sync --refresh --sysupgrade --noconfirm base-devel yay
 for pkg in "${Packages[@]}"; do
     yay --sync --noconfirm --needed $pkg
 done
