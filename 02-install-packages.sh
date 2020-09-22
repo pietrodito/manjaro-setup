@@ -33,6 +33,10 @@ Packages=(
     spotify
 )
 
+## FIXME Spotify hack
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+
+
 ## Helper to install the packages listed above
 sudo pacman --sync --refresh --sysupgrade --noconfirm base-devel yay
 for pkg in "${Packages[@]}"; do
