@@ -25,6 +25,7 @@ Packages=(
     pandoc
     texlive-most
     nextcloud-client
+    remarkable-client
     libreoffice-fresh
     inkscape
     zotero
