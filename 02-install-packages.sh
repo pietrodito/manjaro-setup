@@ -29,7 +29,8 @@ Packages=(
     inkscape
     zotero
 
-    ## Music
+    ## Multimedia
+    vlc
     spotify
 )
 
