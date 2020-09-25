@@ -4,3 +4,4 @@
 ./03-clone-config-files.sh
 Rscript ./04-R-core-packages-install.R
 ./05-npm-packages.sh
+./06-fix-time-diff-Win-Linux.sh
