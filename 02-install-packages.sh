@@ -19,19 +19,19 @@ Packages=(
     r gcc-fortran tk
 #    julia-bin
     npm
-    jre-openjkd # needed by libreoffice...
+#    jre-openjkd # needed by libreoffice...
 
     ## Documents
     pandoc
     texlive-most
-    nextcloud-client
-    remarkable-client
-    libreoffice-fresh
-    inkscape
-    zotero
+#    nextcloud-client
+#    remarkable-client
+#    libreoffice-fresh
+#    inkscape
+#    zotero
 
     ## Multimedia
-    vlc
+#    vlc
 #    spotify
 )
 
