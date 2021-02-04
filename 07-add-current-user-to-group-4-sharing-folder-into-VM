@@ -1,0 +1,2 @@
+sudo usermod -G vboxsf -a $USER
+
