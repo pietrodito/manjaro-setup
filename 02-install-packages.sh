@@ -2,9 +2,13 @@ Packages=(
 
     ## Core
     terminator
-    emacs
     tmux
     nerd-fonts-iosevka
+
+    ## emacs
+    emacs
+    hunspell-fr
+    hunspell-en_us
 
     ## KBD
     xcape
