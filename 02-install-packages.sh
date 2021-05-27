@@ -6,13 +6,13 @@ Packages=(
     nerd-fonts-iosevka
 
     ## emacs
-    emacs
-    hunspell-fr
-    hunspell-en_us
+#    emacs
+#    hunspell-fr
+#    hunspell-en_us
 
     ## KBD
-    xcape
-    autokey-patched
+#    xcape
+#   autokey-patched
 
     ## CLI
     peco-bin
@@ -20,14 +20,14 @@ Packages=(
     fasd
 
     ## Programming
-    r gcc-fortran tk
+#    r gcc-fortran tk
 #    julia-bin
-    npm
+#    npm
 #    jre-openjkd # needed by libreoffice...
 
     ## Documents
-    pandoc
-    texlive-most
+#    pandoc
+#    texlive-most
 #    nextcloud-client
 #    remarkable-client
 #    libreoffice-fresh
