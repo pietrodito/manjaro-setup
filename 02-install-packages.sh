@@ -8,7 +8,6 @@ Packages=(
       xclip ## needed for tmux yank
 
     ## Fonts
-    fonts-firacode
     nerd-fonts-iosevka
 
     ## utils
