@@ -23,11 +23,15 @@ Packages=(
 
     ## emacs
     emacs
+    ripgrep
+    fd
 #    hunspell-fr
 #    hunspell-en_us
 
     ## KBD
-   autokey-patched
+   autokey-gtk ## Does 'autokey' needed
+
+
 
     ## CLI
     peco-bin
