@@ -1,18 +1,33 @@
+#!/bin/zsh
+
 Packages=(
 
     ## Core
     terminator
     tmux
+      xclip ## needed for tmux yank
+
+    ## Fonts
+    fonts-firacode
     nerd-fonts-iosevka
 
+    ## utils
+    bat
+    mlocate
+    exa
+
+    ## fun
+    cowsay
+    lolcat
+    fortune-mod
+
     ## emacs
-#    emacs
+    emacs
 #    hunspell-fr
 #    hunspell-en_us
 
     ## KBD
-#    xcape
-#   autokey-patched
+   autokey-patched
 
     ## CLI
     peco-bin
@@ -20,28 +35,24 @@ Packages=(
     fasd
 
     ## Programming
-#    r gcc-fortran tk
+     r gcc-fortran tk
 #    julia-bin
-#    npm
-#    jre-openjkd # needed by libreoffice...
+     npm # needed for bash lsp
+     jre-openjkd # needed by libreoffice...
 
     ## Documents
-#    pandoc
-#    texlive-most
-#    nextcloud-client
+    pandoc
+    texlive-most
+    nextcloud-client
 #    remarkable-client
-#    libreoffice-fresh
-#    inkscape
-#    zotero
+    libreoffice-fresh
+    inkscape
+    zotero
 
     ## Multimedia
-#    vlc
-#    spotify
+    vlc
+    spotify
 )
-
-## FIXME Spotify hack
-# curl -sS https://download.spotify.com/debian/pubkey.gpg | gpg --import -
-# gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
 
 ## Helper to install the packages listed above
 sudo pacman --sync --refresh --sysupgrade --noconfirm base-devel yay
