@@ -22,7 +22,7 @@ gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'terminator.des
 
 
 ## Bluetooth at startup
-sudo sed -i 's/^AutoEnable=false$/AutoEnable=true/' /etc/bluetooth/main.conf
+sudo sed -i 's/^#AutoEnable=false$/AutoEnable=true/' /etc/bluetooth/main.conf
 
 ## Remove firefox tuning
 fire_profile=`cat ~/.mozilla/firefox/profiles.ini | grep 'Path=' | grep 'release' | sed s/^Path=//`
