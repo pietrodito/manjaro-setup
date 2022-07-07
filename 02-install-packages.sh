@@ -12,7 +12,6 @@ Packages=(
     ## Appearance
     nerd-fonts-complete
     layan-cursor-theme-git
-    oreo-cursors-git
 
 
     ## utils
