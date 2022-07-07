@@ -5,7 +5,7 @@ Packages=(
     ## Core
     terminator
     tmux
-      xclip ## needed for tmux yank
+    xclip ## needed for tmux yank
 
     ## Fonts
     nerd-fonts-iosevka
@@ -15,7 +15,8 @@ Packages=(
     mlocate
     exa
 
-    ## fun
+    interception-caps2esc
+
     cowsay
     lolcat
     fortune-mod
@@ -28,7 +29,7 @@ Packages=(
 #    hunspell-en_us
 
     ## KBD
-   autokey-gtk ## Does 'autokey' needed
+    # autokey-gtk ## Does 'autokey' needed
 
 
 
@@ -39,22 +40,19 @@ Packages=(
 
     ## Programming
      r gcc-fortran tk
-#    julia-bin
      npm # needed for bash lsp
-     jre-openjkd # needed by libreoffice...
 
     ## Documents
     pandoc
     texlive-most
     nextcloud-client
-#    remarkable-client
     libreoffice-fresh
+    jre-openjkd # needed by libreoffice...
     inkscape
     zotero
 
     ## Multimedia
     vlc
-    spotify
 )
 
 ## Helper to install the packages listed above

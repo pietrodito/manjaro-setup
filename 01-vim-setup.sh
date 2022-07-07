@@ -1,4 +1,4 @@
-sudo pacman --sync --noconfirm --needed git vim
+sudo pacman --sync --noconfirm --needed vim
 
 # Clone ultimate Vim configuration from amix on Github
 rm --recursive --force ~/.vim_runtime
