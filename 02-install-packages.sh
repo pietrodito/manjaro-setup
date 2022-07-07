@@ -8,14 +8,12 @@ Packages=(
     xclip ## needed for tmux yank
 
     ## Fonts
-    nerd-fonts-iosevka
+    nerd-fonts-complete
 
     ## utils
     bat
     mlocate
     exa
-
-    interception-caps2esc
 
     cowsay
     lolcat
