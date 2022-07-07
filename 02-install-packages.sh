@@ -32,6 +32,7 @@ Packages=(
 
     ## KBD
     # autokey-gtk ## Does 'autokey' needed
+    kmonad-git
 
 
 
