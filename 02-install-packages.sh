@@ -2,13 +2,18 @@
 
 Packages=(
 
+
     ## Core
     terminator
     tmux
     xclip ## needed for tmux yank
+    trizen-git ## helper to list AUR packages
 
-    ## Fonts
+    ## Appearance
     nerd-fonts-complete
+    layan-cursor-theme-git
+    oreo-cursors-git
+
 
     ## utils
     bat
