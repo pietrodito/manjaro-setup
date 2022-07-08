@@ -19,6 +19,9 @@ gnome-extensions enable  dash-to-panel@jderose9.github.com
 
 ## Set favorites to dash
 gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'terminator.desktop']"
+gsettings set org.gnome.desktop.interface enable-hot-corners false
+gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 
 
 ## Bluetooth at startup
