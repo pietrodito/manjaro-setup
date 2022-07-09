@@ -10,6 +10,12 @@ setup_everything () {
 
 while :
 do
+    FILE=actual-kbd-path
+    if test -f "$FILE"; then
+        setup_everything $(cat $FILE)
+       break
+    fi
+
   echo  "Help me found your keyboard:"
   echo  " (1) By path - (mandatory for laptops)"
   echo  " (2) By id"
@@ -37,9 +43,9 @@ do
 
    if [[ "$userInput" == "yes" ]]
    then
-       setup_everything $kbd_loc
-       break
+       echo $kbd_loc > $FILE
    fi
 done
 
+sudo systemctl enable --now kmonad.service
 

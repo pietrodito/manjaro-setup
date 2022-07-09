@@ -16,7 +16,7 @@
   tab    q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps   a    s    d    f    g    h    j    k    l    ;    '        ret
   lsft   z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl  lmet lalt          spc            ralt rmet cmp  rctl
+  lctl  lmet lalt          spc            ralt rmet cmp    rctl
 )
 
 
@@ -31,8 +31,8 @@
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   @xcp a    s    d    f    g    h    j    k    l    ;    '    ret
-  lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            ralt rmet @sym @tst
+  lsft z    x    c    v    b    n    m    ,    .    /    @num 
+  i    lmet lalt           spc            ralt rmet @sym @tst
 )
 
 
@@ -512,7 +512,6 @@
 
   ;; Used it the colemak layer
   xcp (tap-hold-next 400 esc ctl)
-)
 
 ;; Some of the buttons used here are defined in the next section
 (deflayer multi-overlay
