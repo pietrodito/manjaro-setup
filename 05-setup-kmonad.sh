@@ -47,5 +47,5 @@ do
    fi
 done
 
-sudo systemctl enable --now kmonad.service
+sudo systemctl stop kmonad.service && sudo systemctl start kmonad.service
 
