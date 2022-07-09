@@ -7,6 +7,9 @@ gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 for i in {1..9}; do gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-$i "[]";done
 for i in {1..9}; do gsettings set org.gnome.shell.keybindings switch-to-application-$i "['<Super>$i']";done
 
+## ralt as compose key
+gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt']"
+
 ## I see a red door...
 gsettings set org.gnome.desktop.background picture-options 'none'
 gsettings set org.gnome.desktop.background primary-color '#000000'
