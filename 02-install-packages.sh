@@ -56,6 +56,7 @@ Packages=(
 
     ## Multimedia
     vlc
+    transmission-gtk
 )
 
 ## Helper to install the packages listed above
