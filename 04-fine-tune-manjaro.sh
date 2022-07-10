@@ -32,8 +32,6 @@ gsettings set org.gnome.desktop.peripherals.mouse speed 1
 ## Manipulate windows
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 
-
-
 ## Who needs more than a terminal and a browser?
 gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'terminator.desktop']"
 
