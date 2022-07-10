@@ -4,7 +4,7 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt']"
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us')]"
 gsettings set org.gnome.desktop.interface gtk-key-theme 'Emacs'
 ## Firefox needs to run on Wayland
-sudo sed -i 's|Exec= /|Exec=env MOZ_ENABLE_WAYLAND=1 /|' /usr/share/applications/firefox/desktop
+sudo sed -i 's|Exec= /|Exec=env MOZ_ENABLE_WAYLAND=1 /|' /usr/share/applications/firefox.desktop
 ## Manipulate windows
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 
@@ -50,6 +50,11 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-typ
 ## Let Mozilla decide for me
 fire_profile=`cat ~/.mozilla/firefox/profiles.ini | grep 'Path=' | grep 'release' | sed s/^Path=//`
 sed -i 's/stylesheets", true/stylesheets", false/' ~/.mozilla/firefox/$fire_profile/user.js
-## TODO: Firefox Hardware Graphical Acceleration
+sed -i 's/stylesheets", true/stylesheets", false/' ~/.mozilla/firefox/$fire_profile/user.js
+if grep gfx.webrender.all ~/.mozilla/firefox/87syjf8o.default-release/user.js > /dev/null;
+  then echo;
+  else
+    echo 'user_pref("gfx.webrender.all", true)' >> ~/.mozilla/firefox/$fire_profile/user.js;
+fi
 ## TODO: Stop XWayland
 ## TODO: see https://linuxfr.org/users/antistress/journaux/parametrer-wayland-et-webrender-pour-firefox-sur-ma-distrib
