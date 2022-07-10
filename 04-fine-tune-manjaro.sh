@@ -1,8 +1,10 @@
 ## -----------------------------------------------------------------------------
 ## Keyboard settings to work with kmonad
 gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt']"
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'us+intl')]"
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us')]"
 gsettings set org.gnome.desktop.interface gtk-key-theme 'Emacs'
+## Firefox needs to run on Wayland
+sudo sed -i 's|Exec= /|Exec=env MOZ_ENABLE_WAYLAND=1 /|' /usr/share/applications/firefox/desktop
 ## Manipulate windows
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 
@@ -48,3 +50,6 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-typ
 ## Let Mozilla decide for me
 fire_profile=`cat ~/.mozilla/firefox/profiles.ini | grep 'Path=' | grep 'release' | sed s/^Path=//`
 sed -i 's/stylesheets", true/stylesheets", false/' ~/.mozilla/firefox/$fire_profile/user.js
+## TODO: Firefox Hardware Graphical Acceleration
+## TODO: Stop XWayland
+## TODO: see https://linuxfr.org/users/antistress/journaux/parametrer-wayland-et-webrender-pour-firefox-sur-ma-distrib
