@@ -26,6 +26,14 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Layan-white-cursors'
 gnome-extensions disable dash-to-dock@micxgx.gmail.com
 gnome-extensions enable  dash-to-panel@jderose9.github.com
 
+## Let's be sure to escape the cat
+gsettings set org.gnome.desktop.peripherals.mouse speed 1
+
+## Manipulate windows
+gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
+
+
+
 ## Who needs more than a terminal and a browser?
 gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'terminator.desktop']"
 
