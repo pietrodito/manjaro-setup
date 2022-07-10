@@ -6,7 +6,6 @@
   cmp-seq-delay 5
   fallthrough true
   allow-cmd true)
-;; -----------------------------------------------------------------------------
 
 ;; -----------------------------------------------------------------------------
 (defsrc
@@ -16,7 +15,6 @@
   caps   a    s    d    f    g    h    j    k    l    ;    '        ret
   lsft   z    x    c    v    b    n    m    ,    .    /    rsft
   lctl  lmet lalt          spc            ralt rmet cmp  rctl)
-;; -----------------------------------------------------------------------------
 
 ;; -----------------------------------------------------------------------------
 (defalias
@@ -25,9 +23,21 @@
   msp  (tap-hold-next-release 400 spc (layer-toggle magic-space))
   smsp (tap-hold-next-release 400 spc (layer-toggle shift-magic-space))
   num  (layer-toggle numbers)
+
+  sup  (layer-toggle super)
+  s1 M-1
+  s2 M-2
+  s3 M-3
+  s4 M-4
+  s5 M-5
+  s6 M-6
+  s7 M-7
+  s8 M-8
+  s9 M-9
+  sl M-l
+
   ntab #(C-tab)
   ptab #(C-S-tab))
-;; -----------------------------------------------------------------------------
 
 ;; -----------------------------------------------------------------------------
 (deflayer qwerty
@@ -36,8 +46,7 @@ esc @ptab @ntab  f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home end del
   tab   q    w    e    r    t    y    u    i    o    p    [    ]    \
   @xcp  a    s    d    f    g    h    j    k    l    ;     '    ret
   lsft   z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl  lmet lalt           @msp            ralt rmet cmp  @num )
-;; -----------------------------------------------------------------------------
+  lctl  @sup lalt           @msp            ralt rmet cmp  @num )
 
 ;; -----------------------------------------------------------------------------
 (deflayer magic-space
@@ -47,7 +56,6 @@ esc @ptab @ntab  f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home end del
   caps   à    ä    d    f    g  left down  up  right  ;    '        ret
  @smsp   z    x    ç    v    b    n    m    ,    .    /    rsft
   lctl  lmet lalt          spc            ralt rmet cmp  rctl)
-;; -----------------------------------------------------------------------------
 
 ;; -----------------------------------------------------------------------------
 (deflayer shift-magic-space
@@ -56,8 +64,7 @@ esc @ptab @ntab  f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home end del
   tab    Â    É    È    Ë    ~    Ÿ    _    Ü    Ï    Ö    [    ]    \
   caps   À    Ä    d    f    g  left down  up  right  ;    '        ret
   lsft   z    x    Ç    v    b    n    m    ,    .    /    rsft
-  lctl  lmet lalt          spc            ralt rmet cmp  rctl)
-;; -----------------------------------------------------------------------------
+  lctl  XX  lalt          spc            ralt rmet cmp  rctl)
 
 ;; -----------------------------------------------------------------------------
 (deflayer numbers
@@ -67,7 +74,15 @@ esc @ptab @ntab  f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home end del
    _    _    _    _    _    XX   *    1    2    3    +    _    _
    _    _    \(   \)   .    XX   1    0    0    .   ret   _
    _    _    _              _              _    _    _    _)
+
 ;; -----------------------------------------------------------------------------
+(deflayer super
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home end del
+   _  @s1  @s2  @s3  @s4  @s5  @s6  @s7  @s8  @s9    _    _    _    _
+   _    _    _    _    _    _    _    _    _    _    _    _    _    _
+   _    _    _    _    _    _    _    _    _  @sl    _    _    _
+   _    _    _    _    _    _    _    _    _    _    _    _
+   _    _    _            XX              _    _    _    _)
 
 ;; -----------------------------------------------------------------------------
 (deflayer empty
@@ -77,4 +92,3 @@ esc @ptab @ntab  f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  home end del
    _    _    _    _    _    _    _    _    _    _    _    _    _
    _    _    _    _    _    _    _    _    _    _    _    _
    _    _    _              _              _    _    _    _)
-;; -----------------------------------------------------------------------------

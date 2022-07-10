@@ -1,7 +1,7 @@
 setup_everything () {
 
    # Adapt config file to keyboard location
-   sed "s|<PATTERN_DEVICE_FILE>|$1|" config_template.kbd > config.kbd
+   sed "s|<PATTERN_DEVICE_FILE>|$1|" template.kbd > config.kbd
    sudo mv config.kbd /etc/kmonad/config.kbd
 
    # You have to put service up
