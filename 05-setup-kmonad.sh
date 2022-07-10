@@ -1,7 +1,7 @@
 setup_everything () {
 
    # Adapt config file to keyboard location
-   sed "s|<PATTERN_DEVICE_FILE>|$1|" template.kbd > config.kbd
+   sed "s|<PATTERN_DEVICE_FILE>|$1|" utils/template.kbd > config.kbd
    sudo mv config.kbd /etc/kmonad/config.kbd
 
    # You have to put service up
@@ -10,7 +10,7 @@ setup_everything () {
 
 while :
 do
-    FILE=actual-kbd-path
+    FILE=utils/actual-kbd-path
     if test -f "$FILE"; then
         setup_everything $(cat $FILE)
        break
