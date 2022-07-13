@@ -57,6 +57,7 @@ Packages=(
     ## Multimedia
     vlc
     transmission-gtk
+    tor-browser
 )
 
 ## Helper to install the packages listed above
