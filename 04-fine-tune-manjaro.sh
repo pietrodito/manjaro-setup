@@ -5,6 +5,7 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us')]"
 gsettings set org.gnome.desktop.interface gtk-key-theme 'Emacs'
 ## Firefox needs to run on Wayland
 sudo sed -i 's|Exec= /|Exec=env MOZ_ENABLE_WAYLAND=1 /|' /usr/share/applications/firefox.desktop
+sudo sed -i 's|Exec=/|Exec=env MOZ_ENABLE_WAYLAND=1 /|' /usr/share/applications/firefox.desktop
 ## Manipulate windows
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 
