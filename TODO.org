@@ -5,3 +5,4 @@
 + Use ranger.el in emacs and image preview
 + https://github.com/ralesi/ranger.el
 + Turn off XWayland
++ Make emacsclient able to open file at first launch
