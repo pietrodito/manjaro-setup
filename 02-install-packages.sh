@@ -52,7 +52,10 @@ Packages=(
     libreoffice-fresh
     jre-openjkd # needed by libreoffice...
     inkscape
-    zotero
+
+    ## Security
+    protonvpn libappindicator-gtk3 gnome-shell-extension-appindicator
+
 
     ## Multimedia
     vlc
