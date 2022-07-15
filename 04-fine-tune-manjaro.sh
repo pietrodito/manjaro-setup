@@ -42,6 +42,11 @@ gsettings set org.gnome.desktop.background color-shading-type 'solid'
 gnome-extensions disable dash-to-dock@micxgx.gmail.com
 gnome-extensions enable  dash-to-panel@jderose9.github.com
 
+## Nautilus setup
+## Jules Vernes tends to keep things organized in list
+gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
+
+
 ## -----------------------------------------------------------------------------
 ## Do not suspend my computer
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
