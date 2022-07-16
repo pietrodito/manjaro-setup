@@ -6,8 +6,10 @@ Packages=(
     ## Core
     terminator
     tmux
-    xclip ## needed for tmux yank
+    wl-clipboard
+    xclip ## TODO check if still needed for tmux yank in Wayland?
     trizen-git ## helper to list AUR packages
+
 
     ## Appearance
     nerd-fonts-complete
