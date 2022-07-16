@@ -56,7 +56,6 @@ Packages=(
     inkscape
 
     ## Security
-    protonvpn libappindicator-gtk3 gnome-shell-extension-appindicator
 
 
     ## Multimedia
