@@ -56,6 +56,7 @@ Packages=(
     inkscape
 
     ## Security
+    wireguard-tools
 
 
     ## Multimedia
