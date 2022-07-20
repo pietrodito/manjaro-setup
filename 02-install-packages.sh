@@ -57,6 +57,7 @@ Packages=(
 
     ## Security
     wireguard-tools
+    signal-desktop
 
 
     ## Multimedia
