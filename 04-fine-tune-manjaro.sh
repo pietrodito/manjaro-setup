@@ -29,7 +29,7 @@ gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 
 ## -----------------------------------------------------------------------------
 ## Who needs more than a terminal and a browser?
-gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'terminator.desktop']"
+gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'terminator.desktop', 'signal-desktop.desktop']"
 
 ## -----------------------------------------------------------------------------
 ## I see a red door...
