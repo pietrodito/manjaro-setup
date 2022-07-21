@@ -41,6 +41,7 @@ gsettings set org.gnome.desktop.background color-shading-type 'solid'
 ## This is not a blackboard, and this is not school...
 gnome-extensions disable dash-to-dock@micxgx.gmail.com
 gnome-extensions enable  dash-to-panel@jderose9.github.com
+gnome-extensions enable  showvpn@balaye.net
 
 ## Nautilus setup
 ## Jules Vernes tends to keep things organized in list
