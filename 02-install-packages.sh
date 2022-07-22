@@ -46,6 +46,7 @@ Packages=(
     ## Programming
      r gcc-fortran tk
      npm # needed for bash lsp
+     icaclient xerces-c webkit2gtk libc++
 
     ## Documents
     pandoc
