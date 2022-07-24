@@ -1,3 +1,8 @@
+# Emacs as systemd service
+systemctl enable --user emacs
+systemctl start  --user emacs
+
+
 # Doom emacs
 
 ## Install doom
