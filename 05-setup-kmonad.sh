@@ -1,5 +1,6 @@
 setup_everything () {
 
+   sudo mkdir -p /etc/kmonad/
    # Adapt config file to keyboard location
    sed "s|<PATTERN_DEVICE_FILE>|$1|" utils/template.kbd > config.kbd
    sudo mv config.kbd /etc/kmonad/config.kbd
