@@ -56,6 +56,10 @@ Packages=(
     jre-openjkd # needed by libreoffice...
     inkscape
 
+
+    ## Network
+    bind ## dig + nslookup
+
     ## Security
     wireguard-tools
     signal-desktop
