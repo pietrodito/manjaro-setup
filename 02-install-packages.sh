@@ -21,6 +21,7 @@ Packages=(
     mlocate
     exa
 
+    ## Fun
     cowsay
     lolcat
     fortune-mod
@@ -33,9 +34,7 @@ Packages=(
 #    hunspell-en_us
 
     ## KBD
-    # autokey-gtk ## Does 'autokey' needed
     kmonad-git
-
 
 
     ## CLI
@@ -69,6 +68,9 @@ Packages=(
     vlc
     transmission-gtk
     tor-browser
+
+    ## Phone
+    mtpfs
 )
 
 ## Helper to install the packages listed above
