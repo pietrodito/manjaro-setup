@@ -27,7 +27,7 @@ Packages=(
     fortune-mod
 
     ## emacs
-    emacs
+    emacs28-git
     ripgrep
     fd
 #    hunspell-fr

@@ -33,7 +33,7 @@
   tab   q    w    e    r    t    y    u    i    o    p    [    ]    \
   @xcp  a    s    d    f    g    h    j    k    l    ;     '    ret
   lsft   z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl  lmet lalt           @msp            ralt rmet cmp  @num )
+  lctl  lmet lalt           @msp            ralt rmet @num  rctl )
 
 ;; -----------------------------------------------------------------------------
 (deflayer magic-space
@@ -42,7 +42,7 @@
   tab    â    é    è    ë    t    ÿ    ù    ü    ï    ö    [    ]    \
   caps   à    ä    d    f    g  left down  up  right  ;    '        ret
  @smsp   z    x    ç    v    b    n    m    ,    .    /    rsft
-  lctl  lmet lalt          spc            ralt rmet cmp  rctl)
+  lctl  lmet  lalt       spc            ralt rmet cmp  rctl)
 
 ;; -----------------------------------------------------------------------------
 (deflayer shift-magic-space
