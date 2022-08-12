@@ -1,17 +1,10 @@
 setup_everything () {
-
-   sudo mkdir -p /etc/kmonad/
-   # Adapt config file to keyboard location
-   sed "s|<PATTERN_DEVICE_FILE>|$1|" utils/template.kbd > config.kbd
-   sudo mv config.kbd /etc/kmonad/config.kbd
-
-   # You have to put service up
-   sudo systemctl enable --now kmonad.service
+   sed "s|<PATTERN_DEVICE_FILE>|$1|" utils/kmonad/template.kbd > utils/kmonad/config.kbd
 }
 
 while :
 do
-    FILE=utils/actual-kbd-path
+    FILE=utils/kmonad/actual-kbd-path
     if test -f "$FILE"; then
         setup_everything $(cat $FILE)
        break
@@ -48,5 +41,5 @@ do
    fi
 done
 
-sudo systemctl stop kmonad.service && sudo systemctl start kmonad.service
-
+systemctl --user enable kmonad.service
+systemctl --user start kmonad.service
