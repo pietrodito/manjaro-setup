@@ -2,29 +2,14 @@
 
 Packages=(
 
-
     ## Core
     terminator
     tmux
     wl-clipboard
-    xclip ## TODO check if still needed for tmux yank in Wayland?
     trizen-git ## helper to list AUR packages
 
-
-    ## Appearance
-    nerd-fonts-complete
-    layan-cursor-theme-git
-
-
-    ## utils
-    bat
-    mlocate
-    exa
-
-    ## Fun
-    cowsay
-    lolcat
-    fortune-mod
+    ## KBD
+    kmonad-git
 
     ## emacs
     emacs28-git
@@ -33,14 +18,21 @@ Packages=(
 #    hunspell-fr
 #    hunspell-en_us
 
-    ## KBD
-    kmonad-git
-
-
     ## CLI
     peco-bin
     tree
     fasd
+    bat
+    mlocate
+    exa
+
+    ## Network
+    bind ## dig + nslookup
+
+    ## Privacy
+    wireguard-tools
+    signal-desktop
+    tor-browser
 
     ## Programming
      r gcc-fortran tk
@@ -55,22 +47,21 @@ Packages=(
     jre-openjkd # needed by libreoffice...
     inkscape
 
-
-    ## Network
-    bind ## dig + nslookup
-
-    ## Security
-    wireguard-tools
-    signal-desktop
-
-
     ## Multimedia
     vlc
     transmission-gtk
-    tor-browser
 
     ## Phone
     mtpfs
+
+    ## Appearance
+    nerd-fonts-complete
+    layan-cursor-theme-git
+
+    ## Fun
+    cowsay
+    lolcat
+    fortune-mod
 )
 
 ## Helper to install the packages listed above
