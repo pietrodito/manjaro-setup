@@ -58,7 +58,7 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-typ
 fire_profile=`cat ~/.mozilla/firefox/profiles.ini | grep 'Path=' | grep 'release' | sed s/^Path=//`
 sed -i 's/stylesheets", true/stylesheets", false/' ~/.mozilla/firefox/$fire_profile/user.js
 sed -i 's/stylesheets", true/stylesheets", false/' ~/.mozilla/firefox/$fire_profile/user.js
-if grep gfx.webrender.all ~/.mozilla/firefox/87syjf8o.default-release/user.js > /dev/null;
+if grep gfx.webrender.all ~/.mozilla/firefox/$fire_profile/user.js > /dev/null;
   then echo;
   else
     echo 'user_pref("gfx.webrender.all", true)' >> ~/.mozilla/firefox/$fire_profile/user.js;
