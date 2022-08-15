@@ -41,5 +41,8 @@ do
    fi
 done
 
+sudo groupadd uinput
+sudo usermod -aG uinput ulys
+
 systemctl --user enable kmonad.service
 systemctl --user start kmonad.service
