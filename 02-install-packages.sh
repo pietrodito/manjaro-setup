@@ -10,6 +10,7 @@ Packages=(
     trizen-git ## helper to list AUR packages
 
     ## CLI
+    jq
     fd
     peco-bin
     tree
