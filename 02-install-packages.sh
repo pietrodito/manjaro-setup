@@ -10,6 +10,7 @@ Packages=(
     trizen-git ## helper to list AUR packages
 
     ## CLI
+    fd
     peco-bin
     tree
     fasd
@@ -23,7 +24,6 @@ Packages=(
     ## emacs
 #    emacs28-git
 #    ripgrep
-#    fd
 #    hunspell-fr
 #    hunspell-en_us
 
