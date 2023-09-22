@@ -3,20 +3,11 @@
 Packages=(
 
     ## Core
-    terminator
+    terminator ttf-iosevka
     tmux
     wl-clipboard
+    docker
     trizen-git ## helper to list AUR packages
-
-    ## KBD
-    kmonad-git
-
-    ## emacs
-    emacs28-git
-    ripgrep
-    fd
-#    hunspell-fr
-#    hunspell-en_us
 
     ## CLI
     peco-bin
@@ -26,33 +17,43 @@ Packages=(
     mlocate
     exa
 
+    ## KBD
+    kmonad-bin ## last checked
+
+    ## emacs
+#    emacs28-git
+#    ripgrep
+#    fd
+#    hunspell-fr
+#    hunspell-en_us
+
     ## Network
     bind ## dig + nslookup
 
     ## Privacy
-    wireguard-tools
-    signal-desktop
-    tor-browser
+#    wireguard-tools
+#    signal-desktop
+#    tor-browser
 
     ## Programming
-     r gcc-fortran tk
-     npm # needed for bash lsp
-     icaclient xerces-c webkit2gtk libc++
+#      r gcc-fortran tk
+#      npm # needed for bash lsp
+#      icaclient xerces-c webkit2gtk libc++
 
     ## Documents
-    pandoc
-    texlive-most
-    nextcloud-client
-    libreoffice-fresh
-    jre-openjkd # needed by libreoffice...
-    inkscape
+#    pandoc
+#    texlive-most
+#    nextcloud-client
+#    libreoffice-fresh
+#    jre-openjkd # needed by libreoffice...
+#    inkscape
 
     ## Multimedia
-    vlc
-    transmission-gtk
+#    vlc
+#    transmission-gtk
 
     ## Phone
-    mtpfs
+#    mtpfs
 
     ## Appearance
     nerd-fonts-complete

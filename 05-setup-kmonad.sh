@@ -45,6 +45,8 @@ sudo groupadd uinput
 sudo usermod -aG uinput ulys
 
 sudo cp utils/kmonad/99-kmonad.rules /lib/udev/rules.d/
+sudo mkdir -p /etc/kmonad/
+sudo cp utils/kmonad/config.kbd /etc/kmonad/config.kbd
 
 systemctl --user enable kmonad.service
 systemctl --user start kmonad.service
