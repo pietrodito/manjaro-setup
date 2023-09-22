@@ -3,6 +3,7 @@
 Packages=(
 
     ## Core
+    firefox-developer-edition
     terminator ttf-iosevka
     tmux
     wl-clipboard
