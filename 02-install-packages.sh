@@ -7,8 +7,9 @@ Packages=(
     terminator ttf-iosevka
     tmux
     wl-clipboard
-    docker
+    docker docker-buildx
     trizen-git ## helper to list AUR packages
+    visual-studio-code-bin
 
     ## CLI
     jq
