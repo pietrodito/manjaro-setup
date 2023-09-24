@@ -1,0 +1,17 @@
+[Unit]
+Description=Rstudio
+After=portal.service
+Requires=docker.service
+
+[Service]
+TimeoutStartSec=3000
+Type=simple
+WorkingDirectory=/tmp/
+
+ExecStart=/bin/docker start -a rstudio-server
+
+ExecStop=/bin/docker stop rstudio-server
+
+[Install]
+WantedBy=multi-user.target
+
