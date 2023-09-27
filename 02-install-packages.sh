@@ -24,6 +24,9 @@ Packages=(
     ## KBD
     kmonad-bin ## last checked
 
+    ## Citrix for SNDS / ATIH
+    icaclient xerces-c webkit2gtk libc++
+
     ## emacs
 #    emacs28-git
 #    ripgrep
@@ -41,7 +44,6 @@ Packages=(
     ## Programming
 #      r gcc-fortran tk
 #      npm # needed for bash lsp
-#      icaclient xerces-c webkit2gtk libc++
 
     ## Documents
 #    pandoc
