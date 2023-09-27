@@ -7,7 +7,7 @@ Packages=(
     terminator ttf-iosevka
     tmux
     wl-clipboard
-    docker docker-buildx
+    docker docker-buildx docker-compose
     trizen-git ## helper to list AUR packages
     visual-studio-code-bin
 
@@ -49,7 +49,7 @@ Packages=(
 #    pandoc
 #    texlive-most
 #    nextcloud-client
-#    libreoffice-fresh
+    libreoffice-fresh
 #    jre-openjkd # needed by libreoffice...
 #    inkscape
 

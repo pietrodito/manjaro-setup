@@ -9,6 +9,7 @@ git clone git@github.com:pietrodito/rstudio-projects.git $HOME/Comp/rstudio-proj
                 --name    rstudio-server                                                \
                 -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix                  \
                 --mount   type=bind,src=$HOME/Comp/rstudio-projects/,dst=/home/rstudio  \
+                --network=rstudio_bridge                                                \
                 --detach  rstudio-server-no-login
 
 
