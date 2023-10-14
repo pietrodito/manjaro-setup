@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ./build.sh
 
 mkdir -p $HOME/Comp
@@ -5,11 +7,13 @@ git clone git@github.com:pietrodito/rstudio-projects.git $HOME/Comp/rstudio-proj
 
 /bin/docker rm -f rstudio-server
 
-/bin/docker run --publish 8787:8787                                                     \
-                --name    rstudio-server                                                \
-                -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix                  \
+# X11 under docker needs perms on ~/.Xauthority
+setfacl -m user:1000:r ${HOME}/.Xauthority
+
+/bin/docker run --name    rstudio-server                                                \
+                -e DISPLAY=${DISPLAY}                                                   \
                 --mount   type=bind,src=$HOME/Comp/rstudio-projects/,dst=/home/rstudio  \
-                --network=rstudio_bridge                                                \
+                --network=host                                                          \
                 --detach  rstudio-server-no-login
 
 
