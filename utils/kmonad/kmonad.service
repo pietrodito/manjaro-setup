@@ -1,0 +1,11 @@
+[Unit]
+Description=Kmonad keyboard remapper
+Documentation=https://github.com/david-janssen/kmonad
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kmonad /etc/kmonad/config.kbd
+Restart=always
+
+[Install]
+WantedBy=default.target

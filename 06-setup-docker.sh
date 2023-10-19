@@ -7,6 +7,3 @@ sudo usermod -aG docker ulys
 systemctl enable docker.service
 systemctl start docker.service
 
-# x11docker possible idea?
-# https://github.com/mviereck/x11docker
-# curl -fsSL https://raw.githubusercontent.com/mviereck/x11docker/master/x11docker | sudo bash -s -- --update

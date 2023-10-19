@@ -48,4 +48,5 @@ sudo cp utils/kmonad/99-kmonad.rules /lib/udev/rules.d/
 sudo mkdir -p /etc/kmonad/
 sudo cp utils/kmonad/config.kbd /etc/kmonad/config.kbd
 
+sudo cp -f utils/kmonad/kmonad.service /etc/systemd/system/
 systemctl enable kmonad.service && systemctl start kmonad.service
