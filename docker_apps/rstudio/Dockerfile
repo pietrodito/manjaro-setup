@@ -14,10 +14,9 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get purge libnode-dev libnode72 -y
 RUN apt-get install nodejs -y
-RUN R -q -e 'install.packages(           \
-                                "rhino"  \
-                               )'        \
-                                         \      
+
+RUN R -q -e 'install.packages("remotes")'
+RUN R -q -e 'remotes::install_github("Appsilon/rhino")'  \
     && strip /usr/local/lib/R/site-library/*/libs/*.so
        ## Reduce image size
 
