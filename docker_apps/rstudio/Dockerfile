@@ -1,5 +1,5 @@
 ## Most complete image available on rocker
-FROM docker.io/rocker/geospatial:4.2.3
+FROM docker.io/rocker/geospatial:latest
 
 
 RUN sudo apt-get update
