@@ -4,6 +4,7 @@ FROM docker.io/rocker/geospatial:4.3
 
 RUN sudo apt-get update
 RUN sudo apt-get install -y ca-certificates curl gnupg libgtk-3-0 libatk-bridge2.0-0 xclip
+
 RUN sudo mkdir -p /etc/apt/keyrings
 
 ## Node / for cypress (headless browser for testing js app)
@@ -15,7 +16,7 @@ RUN apt-get upgrade -y
 RUN apt-get purge libnode-dev libnode72 -y
 RUN apt-get install nodejs -y
 
-RUN R -q -e 'install.packages("remotes")'
+RUN R -q -e 'install.packages(c("remotes", "DBI", "RPostgres", "odbc"))'
 RUN R -q -e 'remotes::install_github("Appsilon/rhino")'  \
     && strip /usr/local/lib/R/site-library/*/libs/*.so
        ## Reduce image size
