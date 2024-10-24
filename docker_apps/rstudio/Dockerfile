@@ -15,14 +15,17 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get purge libnode-dev libnode72 -y
 RUN apt-get install nodejs -y
-RUN apt-get install python3-dev -y
-RUN apt-get install python3-venv -y
-RUN apt-get install python3-rpy2 -y
+
+## IF PYTHON IS NEEDED
+## RUN apt-get install python3-dev -y
+## RUN apt-get install python3-venv -y
+## RUN apt-get install python3-rpy2 -y
+## RUN R -q -e 'install.packages("reticulate")' \
 
 
 RUN R -q -e 'install.packages(c("remotes", "DBI", "RPostgres", "odbc"))'
 RUN R -q -e 'remotes::install_github("Appsilon/rhino")'  
-RUN R -q -e 'install.packages("reticulate")' \
+RUN R -q -e 'install.packages("openxlsx2")' \
    && strip /usr/local/lib/R/site-library/*/libs/*.so
    ## Reduce image size
 
